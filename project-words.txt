@@ -1,0 +1,16 @@
+conda
+ValidateNotNullorEmpty
+libmamba
+pkgs
+mbase
+mkdocs
+techdocs
+ipykernel
+mypy
+pydocstyle
+pylint
+buildpg
+szymonos
+pymdownx
+megalinter
+oxsecurity

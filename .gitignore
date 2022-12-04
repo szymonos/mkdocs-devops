@@ -1,3 +1,10 @@
+# ignored folders
+.private/
+.tmp/
+
+# megalinter
+megalinter-reports/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

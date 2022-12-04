@@ -1,0 +1,19 @@
+# Configuration file for Mega-Linter
+# See all available variables at https://megalinter.github.io/configuration/ and in linters documentation
+
+APPLY_FIXES: none # all, none, or list of linter keys
+DEFAULT_BRANCH: main # Usually master or main
+# ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
+# ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
+ENABLE_LINTERS:
+  - SPELL_CSPELL
+  - GIT_GIT_DIFF
+  - CREDENTIALS_SECRETLINT
+  #- MARKDOWN_MARKDOWN_LINK_CHECK
+  - MARKDOWN_MARKDOWNLINT
+SHOW_ELAPSED_TIME: true
+FILEIO_REPORTER: false
+LOG_LEVEL: WARNING
+SPELL_CSPELL_FILE_EXTENSIONS: [".md"]
+MARKDOWN_MARKDOWNLINT_FILTER_REGEX_INCLUDE: "docs"
+MARKDOWN_MARKDOWNLINT_DISABLE_ERRORS: false

@@ -1,0 +1,11 @@
+site_name: mkdocs-devops
+site_description: A set of how-to and explainer documents.
+repo_name: szymonos/mkdocs-devops
+repo_url: https://github.com/szymonos/mkdocs-devops
+docs_dir: docs
+markdown_extensions:
+  - meta
+  - pymdownx.snippets:
+      auto_append: [links/links.md]
+plugins:
+  - techdocs-core
