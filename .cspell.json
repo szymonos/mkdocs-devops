@@ -14,13 +14,12 @@
     "project-words"
   ],
   "ignorePaths": [
-    "**/node_modules/**",
-    "**/vscode-extension/**",
-    "**/.git/**",
-    "**/.pnpm-lock.json",
+    ".git",
     ".vscode",
-    "megalinter",
+    "megalinter-reports",
+    "node_modules",
     "package-lock.json",
-    "report"
+    "report",
+    "/project-words.txt"
   ]
 }
