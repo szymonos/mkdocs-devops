@@ -50,7 +50,7 @@ if ($Option -in @('create', 'activate', 'remove')) {
 
 # *Execute option
 switch ($Option) {
-    'create' {
+    create {
         # check libmamba solver installation
         if (-not (Get-ChildItem -Path "$env:_CONDA_ROOT/pkgs/" -Filter 'conda-libmamba-solver*' -Directory)) {
             Write-Host 'conda-libmamba-solver not found, installing...'
@@ -71,7 +71,7 @@ switch ($Option) {
         break
     }
 
-    'activate' {
+    activate {
         # *Activate environment
         if ($envExists) {
             Enter-CondaEnvironment $envName
@@ -81,7 +81,7 @@ switch ($Option) {
         break
     }
 
-    'remove' {
+    remove {
         # *Remove environment
         if ($envName -eq 'base') {
             Write-Host "Cannot remove `e[1;4mbase`e[22;24m environment!"
@@ -94,31 +94,31 @@ switch ($Option) {
         break
     }
 
-    'deactivate' {
+    deactivate {
         # *Clean conda
         Exit-CondaEnvironment
         break
     }
 
-    'packages' {
+    packages {
         # *List packages
         Invoke-Conda list
         break
     }
 
-    'environments' {
+    environments {
         # *List environments
         Invoke-Conda env list
         break
     }
 
-    'update' {
+    update {
         # *Update conda
         conda update -y --name base --channel pkgs/main --update-all
         break
     }
 
-    'clean' {
+    clean {
         # *Clean conda
         conda clean -y --all
         break
