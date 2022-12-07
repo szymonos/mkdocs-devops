@@ -13,8 +13,8 @@ description: General vim usage howto
 
 ## Split terminal
 
-- `:term` - open terminal in splitted window
-- `CTRL+ww` - for switching between splitted windows
+- `:term` - open terminal in split window
+- `CTRL+ww` - for switching between split windows
 
 ## Tweaks
 

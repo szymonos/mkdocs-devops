@@ -79,7 +79,7 @@ CREATE *(\w*)? *\w* *INDEX.*
 GRANT +[a-z]+ +ON +\[.+\].\[.+\] +TO +\[(?!LangService)[\w]+_role\]
 ```
 
-### look for all ownerid excep topownerid
+### look for all ownerid except topownerid
 
 ```RegEx
 (?<!top)ownerid\]? +\[?(var)?char\]? *\(8\)
