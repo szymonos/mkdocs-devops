@@ -6,9 +6,9 @@ description: General regex usage howto
 
 ## Links
 
-- [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax)
-- [Regular Expressions Cheat Sheet by DaveChild](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
-- [VSCode find and replace using regex](https://itnext.io/vscode-find-and-replace-regex-super-powers-c7f8be0fa80f)
+- [Basic Syntax | Markdown Guide]
+- [Regular Expressions Cheat Sheet]
+- [VSCode find and replace using regex]
 
 ## Examples
 

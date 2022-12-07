@@ -6,10 +6,10 @@ description: General vim usage howto
 
 ## Links
 
-- [The 30 Basic Vim Commands You'll Use Every Day](https://spin.atomicobject.com/2016/04/19/vim-commands-cheat-sheet/)
-- [Vim Cheat Sheet](https://vim.rtorr.com/)
-- [A Great Vim Cheat Sheet](https://vimsheet.com/)
-- [surround.vim plugin](https://github.com/tpope/vim-surround)
+- [The 30 Basic Vim Commands]
+- [Vim Cheat Sheet]
+- [A Great Vim Cheat Sheet]
+- [surround.vim plugin]
 
 ## Split terminal
 
