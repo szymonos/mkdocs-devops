@@ -9,24 +9,24 @@ Select script action.
 Specify path to conda file to be used for creating environment.
 
 .EXAMPLE
-./conda.ps1                     # *Create/update environment
-./conda.ps1 -o 'activate'       # *Activate environment
-./conda.ps1 -o 'deactivate'     # *Deactivate environment
-./conda.ps1 -o 'packages'       # *List packages
-./conda.ps1 -o 'environments'   # *List environments
-./conda.ps1 -o 'update'         # *Update conda
-./conda.ps1 -o 'clean'          # *Clean conda
-./conda.ps1 -o 'remove'         # !Remove environment
+./conda.ps1                           # *Create/update environment
+./conda.ps1 activate                  # *Activate environment
+./conda.ps1 deactivate                # *Deactivate environment
+./conda.ps1 list                      # *List packages
+./conda.ps1 envs                      # *List environments
+./conda.ps1 update                    # *Update conda
+./conda.ps1 clean                     # *Clean conda
+./conda.ps1 remove                    # !Remove environment
 
 $CondaFile = '.tmp/env.yml'
-./conda.ps1 -f $CondaFile               # *Create/update environment
-./conda.ps1 -f $CondaFile -o 'activate' # *Activate environment
-./conda.ps1 -f $CondaFile -o 'remove'   # !Remove environment
+./conda.ps1 -f $CondaFile             # *Create/update environment
+./conda.ps1 -f $CondaFile -o activate # *Activate environment
+./conda.ps1 -f $CondaFile -o remove   # !Remove environment
 #>
 [CmdletBinding()]
 param (
-    [Alias('o')]
-    [ValidateSet('create', 'activate', 'deactivate', 'packages', 'environments', 'clean', 'update', 'remove')]
+    [Parameter(Position = 0)]
+    [ValidateSet('create', 'activate', 'deactivate', 'list', 'envs', 'clean', 'update', 'remove')]
     [string]$Option = 'create',
 
     [Alias('f')]
@@ -100,13 +100,13 @@ switch ($Option) {
         break
     }
 
-    packages {
+    list {
         # *List packages
         Invoke-Conda list
         break
     }
 
-    environments {
+    envs {
         # *List environments
         Invoke-Conda env list
         break
