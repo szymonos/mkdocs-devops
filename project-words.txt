@@ -1,13 +1,15 @@
+autoload
 conda
 cono
 howto
 ipykernel
+junegunn
 libmamba
 lookarounds
 mbase
 mkdocs
 mypy
-Nullor
+nullor
 nvar
 ownerid
 pkgs
