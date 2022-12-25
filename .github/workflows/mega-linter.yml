@@ -38,3 +38,6 @@ jobs:
           # All available variables are described in documentation
           # https://megalinter.io/configuration/
           VALIDATE_ALL_CODEBASE: true
+
+      - name: Clean up custom extensions
+        run: sudo rm -rf ${{ github.workspace }}/markdown_lint_extensions
