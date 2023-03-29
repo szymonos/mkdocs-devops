@@ -3,16 +3,12 @@ channels:
   - pkgs/main
 dependencies:
   - python
-  - conda-libmamba-solver
   - pip
   - pip:
-      - pip
-      - mkdocs-techdocs-core
-      # Dev
-      - black
-      - flake8
+      # dev
       - ipykernel
       - mypy
       - notebook
       - pydocstyle
-      - pylint
+      # mkdocs
+      - mkdocs-techdocs-core
