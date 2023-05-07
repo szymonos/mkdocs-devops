@@ -6,8 +6,15 @@ ipykernel
 junegunn
 libmamba
 lookarounds
+mactivate
 mbase
+mdeactivate
+menvs
 mkdocs
+mlist
+mremove
+msetup
+mupdate
 mypy
 nullor
 nvar
